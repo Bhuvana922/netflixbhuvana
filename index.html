@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Netflix</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 5px;
+            box-sizing: border-box;
+            justify-content: center;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #100f0f;
+        }
+
+        header .logo img {
+            width: 80px;
+            height: 40px;
+        }
+
+        header nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        header nav ul li {
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .banner {
+            height: 200px;
+            color: white;
+            padding: 20px;
+        }
+
+        .banner-content {
+            bottom: 10px;
+            left: 20px;
+        }
+
+        .banner-content h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .banner-content p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .banner-content button {
+            background-color: #e50914;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .movies {
+            padding: 20px;
+        }
+
+        .movies h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .movie-row {
+            display: flex;
+            overflow-x: scroll;
+        }
+
+        .movie-item {
+            margin-right: 10px;
+        }
+
+        .movie-item img {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #141414;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="./images/netflix_image.jpg" alt="Netflix Logo" height="100" width="20p">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <img src="https://cinebuds.com/wp-content/uploads/2021/07/List-Of-Upcoming-Telugu-Movies-On-Sun-NXT.jpg"
+            class="picture style=" width="100%" height="100%" style="margin: 10px;">
+    </div>
+    <!-- Banner Section -->
+
+    <div class="banner-content">
+        <h1>LATEST MOVIES ARE OUT NOW</h1>
+        <p>Watch all sort of latest movies freely and without no ads.</p>
+        <button>Play</button>
+        <button>My List</button>
+    </div>
+
+    <marquee>✨ Upgrade your typing with Azio Keyboards – sleek, durable, and customizable! 💻
+        🚀 Shop now and enjoy exclusive discounts! 🎉
+    </marquee>
+
+    <img src="./images/aJio_Image.jpg" class="picture2 style=" width=500px height=500px">
+    <!-- Movies Section -->
+    <section class="movies">
+        <h2>Popular Movies</h2>
+        <div class="movie-row">
+            <div class="movie-item">
+                <img src="./images/orange_movie_image.jpg" style="margin-right: 10px;" alt="Movie 1">
+            </div>
+
+            <div class="movie-item">
+                <img src="./images/middle_class_melodies_movies.jpg" style="margin-right: 10px;" alt="Movie 2">
+            </div>
+
+            <div class="movie-item">
+                <img src="./images/darling_movie_image.jpg" style="align-items: center;
+                background-position: center; background-repeat: no-repeat;" alt="Movie 3">
+            </div>
+
+            <div class="movie-item">
+                <img src="./images/darling_movie_image.jpg" style="align-items: center;
+                background-position: center; background-repeat: no-repeat;" alt="Movie 3">
+            </div>
+
+            <br>
+
+            <div class="movie-item">
+                <img src="./images/darling_movie_image.jpg" style="align-items: center;
+                background-position: center; background-repeat: no-repeat;" alt="Movie 3">
+            </div>
+
+            <div class="movie-item">
+                <img src="./images/darling_movie_image.jpg" style="align-items: center;
+                background-position: center; background-repeat: no-repeat;" alt="Movie 3">
+            </div>
+
+            <div class="movie-item">
+                <img src="./images/darling_movie_image.jpg" style="align-items: center;
+                background-position: center; background-repeat: no-repeat;" alt="Movie 3">
+            </div>
+            
+            <div class="movie-item">
+                <img src="./images/darling_movie_image.jpg" style="align-items: center;
+                background-position: center; background-repeat: no-repeat;" alt="Movie 3">
+            </div>
+
+            <!-- Add more movies as needed -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2025 Demo Netflix</p>
+    </footer>
+
+    <script>
+        // Example: Add a simple hover effect for movie images (You can expand this with actual interactivity later)
+        document.querySelectorAll('.movie-item img').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                item.style.transform = 'scale(1.1)';
+                item.style.transition = 'transform 0.3s';
+            });
+
+            item.addEventListener('mouseleave', () => {
+                item.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+
+</html>
